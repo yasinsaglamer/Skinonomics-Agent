@@ -73,22 +73,22 @@ Steam API → [Data Factory Trigger] → Bronze (Raw Delta)
 
 ```
 skinonomics-agent/
-├── docs/              # Mimari diyagramı, veri sözlüğü, KPI framework
-├── notebooks/         # Fabric Notebook export'ları (.ipynb)
-├── src/               # Yeniden kullanılabilir, test edilebilir modüller
-│   ├── ingestion/         # API client + rate limiting
-│   ├── transformations/   # Bronze→Silver, Silver→Gold
-│   ├── statistics/        # Z-Score, IQR, hareketli ortalamalar
-│   └── agentic/           # Kural motoru (RULE 1-2-3)
-├── config/            # Eşik değerleri, .env şablonu
-├── pipelines/         # Data Factory orkestrasyon export'u
-├── powerbi/           # Dashboard (.pbip)
-└── tests/             # Unit test'ler
+├── docs/              
+├── notebooks/         
+├── src/               
+│   ├── ingestion/         
+│   ├── transformations/   
+│   ├── statistics/        
+│   └── agentic/           
+├── config/            
+├── pipelines/         
+├── powerbi/           
+└── tests/             
 ```
 
 ---
 
-##  Dashboard (Üç Kitleye Göre Tasarım)
+##  Dashboard 
 
 | Sayfa | Hedef Kitle | İçerik |
 |-------|-------------|--------|
@@ -103,7 +103,7 @@ skinonomics-agent/
 >  **Geliştirme aşamasında.** Mimari ve kod katmanları kurgulanıyor; canlı dağıtım (deployment) öncesi yerel validasyon devam ediyor.
 
 - [x] Mimari tasarım & repo yapısı
-- [ ] Bronze ingestion (API client)
+- [x ] Bronze ingestion (API client)
 - [ ] Silver transformation
 - [ ] Gold statistics + Agentic rules
 - [ ] Power BI DirectLake dashboard
@@ -120,4 +120,4 @@ skinonomics-agent/
 
 ---
 
-*Bu proje eğitim ve portföy amaçlıdır. Steam ve CS2, Valve Corporation'ın ticari markalarıdır; proje Valve ile bağlantılı değildir.*
+*Bu proje eğitim ve portföy amaçlıdır. Steam ve CS2, Valve Corporation'ın ticari markalarıdır proje Valve ile bağlantılı değildir.*
